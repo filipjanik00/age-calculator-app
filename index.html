@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body
+    class="font-main min-h-screen flex justify-center items-center bg-offWhite"
+  >
+    <!-- Main -->
+    <main class="">
+      <!-- Card -->
+      <div
+        class="bg-white shadow-2xl px-6 py-12 rounded-t-3xl rounded-bl-3xl rounded-br-[6rem] md:px-14 md:w-[800px] md:rounded-br-[30%] animate__animated animate__fadeIn"
+      >
+        <!-- Form -->
+        <form id="form" class="flex flex-col gap-16">
+          <!-- Inputs -->
+          <div class="flex gap-4 md:gap-6">
+            <!-- Day -->
+            <div class="form-control md:space-y-2">
+              <p class="text-smokeyGrey tracking-widest transition">DAY</p>
+              <input
+                type="number"
+                name="day"
+                id="day"
+                placeholder="DD"
+                class="border-[1px] border-solid w-[90px] border-lightGrey rounded-lg p-3 focus:outline-none focus:border-purple text-[24px] md:text-[32px] md:px-6 md:w-[160px] transition"
+              />
+              <p
+                class="error-msg hidden absolute text-lightRed text-[0.55rem] mt-2 ml-1 md:text-xs animate__animated animate__bounceIn"
+              >
+                <i>This field is required</i>
+              </p>
+            </div>
+            <!-- Month -->
+            <div class="form-control md:space-y-2">
+              <p class="text-smokeyGrey tracking-widest transition">MONTH</p>
+              <input
+                type="number"
+                name="month"
+                id="month"
+                placeholder="MM"
+                class="border-[1px] border-solid w-[90px] border-lightGrey rounded-lg p-3 focus:outline-none focus:border-purple text-[24px] md:text-[32px] md:px-6 md:w-[160px] transition"
+              />
+              <p
+                class="error-msg hidden absolute text-lightRed text-[0.55rem] mt-2 ml-1 md:text-xs animate__animated animate__bounceIn"
+              >
+                <i>This field is required</i>
+              </p>
+            </div>
+            <!-- Year -->
+            <div class="form-control md:space-y-2">
+              <p class="text-smokeyGrey tracking-widest transition">YEAR</p>
+              <input
+                type="number"
+                name="year"
+                id="year"
+                placeholder="YYYY"
+                class="border-[1px] border-solid w-[90px] border-lightGrey rounded-lg p-3 focus:outline-none focus:border-purple text-[24px] md:text-[32px] md:px-6 md:w-[160px] transition"
+              />
+              <p
+                class="error-msg hidden absolute text-lightRed text-[0.55rem] mt-2 ml-1 md:text-xs animate__animated animate__bounceIn"
+              >
+                <i>This field is required</i>
+              </p>
+            </div>
+          </div>
+          <!-- Line and Button -->
+          <div
+            class="horizontal-line flex justify-end border-b border-[1px] border-lightGrey relative"
+          >
+            <button
+              type="submit"
+              class="btn absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:left-auto md:-right-[60px] hover:scale-[1.125] transition"
+            >
+              <img
+                src="./assets/images/icon-arrow.svg"
+                class="bg-purple w-14 h-14 rounded-full p-3 md:w-24 md:h-24 md:p-7 hover:bg-offBlack transition"
+                alt="Arrow Icon"
+              />
+            </button>
+          </div>
+        </form>
+        <!-- Success Content -->
+        <div class="mt-16 md:space-y-2 font-extrabold">
+          <!-- Years -->
+          <div>
+            <p
+              class="text-5xl flex gap-2 md:text-[6rem] animate__animated animate__bounce"
+            >
+              <span class="years text-purple">--</span><i>years</i>
+            </p>
+          </div>
+          <!-- Months -->
+          <div>
+            <p
+              class="text-5xl flex gap-2 md:text-[6rem] animate__animated animate__bounce"
+            >
+              <span class="months text-purple">--</span><i>months</i>
+            </p>
+          </div>
+          <!-- days -->
+          <div>
+            <p
+              class="text-5xl flex gap-2 md:text-[6rem] animate__animated animate__bounce"
+            >
+              <span class="days text-purple">--</span><i>days</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.error-border {
+  border-color: hsl(0, 100%, 67%);
+}
+
+.form-control.error p {
+  color: hsl(0, 100%, 67%);
+}
+
+.form-control.error input {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+
+.form-control.error .error-msg {
+  display: block;
+}
