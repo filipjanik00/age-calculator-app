@@ -17,12 +17,12 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ![](./screenshots/desktop-preview.png)
 ![](./screenshots/mobile-preview.png)
-![][def]
+![](./screenshots/error.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-4thGx7DsIJ)
-- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/stats-preview-card-component-main/)
+- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/age-calculator-using-tailwind-css-PJoXKOJFp0)
+- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/age-calculator-app/)
 
 ## My process
 
@@ -36,5 +36,3 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 ## Author
 
 - Frontend Mentor - [@filipjanik00](https://www.frontendmentor.io/profile/filipjanik00)
-
-[def]: ./screenshots/error.png
